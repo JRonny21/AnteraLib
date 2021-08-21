@@ -1,0 +1,152 @@
+:root {
+    --background: #e2e2e2;
+}	/* Coded with love by Mutiullah Samim */
+
+* {
+    transition: all 200ms ease-out;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--background);
+}
+.d-flex {
+    perspective: 250px;
+}
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    transform-style: preserve-3d;
+
+}
+.brand_logo_container {
+    position: absolute;
+    width: 170px;
+    height: auto;
+    top: -75px;
+    border-radius: 50%;
+    background: var(--background);
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    fill: #c11a1a;
+}
+
+.brand_logo:hover {
+    fill: #ec3737;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form_container {
+    margin-top: 100px;
+}
+.form-control {
+    color: #c11a1a !important;
+}
+.login_btn {
+    width: 100%;
+    background: #c11a1a !important;
+    color: white !important;
+}
+.login_btn:hover {
+    background: #ec3737 !important;
+}
+.login_btn:active {
+    box-shadow: none !important;
+    outline: 0px !important;
+    background: #962121 !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #c11a1a !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c0392b !important;
+}
+
+a {
+    color: #e79e01 !important;
+}
+
+.credito {
+    background-color: #00000033;
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: block;
+    animation: blinking 5s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes blinking {
+    0% { color: #860000; background-color: #00000033;}
+    100% { color: #c5c5c5d2; background-color: #860000;}
+}
+
+@keyframes open {
+  0% { transform: rotateX(10deg);}
+  50% { transform: rotateX(-2deg);}
+  100% { transform: rotateX(0deg);}
+}
+.open {
+  animation: open 1000ms ease-in-out forwards;
+  transform-origin: 50% 0%;
+}
+
+.brand_logo {
+    animation: zig-zag 2500ms ease-in-out infinite;
+    transform-origin: 50% 20%;
+}
+
+@keyframes zig-zag {
+    0% { transform: rotateZ(-10deg); }
+    50% { transform: rotateZ(10deg); }
+    100% { transform: rotateZ(-10deg); }
+}
+
+@keyframes zoom-out-rotating {
+  0% { transform: rotate(0deg);   opacity: 1;  }
+  95% { opacity: 1; }
+  100% {  transform: rotate(360deg);  opacity: 0;  }
+}
+.zoom-out-rotating {
+  animation: zoom-out-rotating 1200ms ease forwards;
+}
+
+@keyframes shrink {
+  0% {   opacity: 1;  }
+  100% {  opacity: 0;  }
+}
+.shrink {
+  animation: shrink 1200ms ease-out forwards;
+}
