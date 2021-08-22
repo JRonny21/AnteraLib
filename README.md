@@ -1,2 +1,2 @@
-#mvgraphics_php
-Proyecto personal para la pagina demi hermano, necesita ser transcrita y separar el backend php.
+# MVGraphics en php
+Proyecto personal para la pagina de mi hermano, necesita ser transcrita y separar el backend php.
